@@ -101,4 +101,8 @@ while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --config $HOME/.config/bspwm/picom.conf &
 
 # replace neovim colorscheme
-sed -i "s/theme =.*$/theme = \"tokyonight\",/g" $HOME/.config/nvim/lua/chadrc.lua
+sed -i "s/theme =.*$/theme = \"onedark\",/g" $HOME/.config/nvim/lua/chadrc.lua
+
+## Welcome-App-Run-Once
+stalker-welcome &
+sed -i -e '/## Welcome-App-Run-Once/Q' "$HOME/.config/bspwm/bspwmrd"
