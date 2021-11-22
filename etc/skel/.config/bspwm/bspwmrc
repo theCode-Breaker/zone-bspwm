@@ -104,5 +104,5 @@ picom --config $HOME/.config/bspwm/picom.conf &
 sed -i "s/theme =.*$/theme = \"onedark\",/g" $HOME/.config/nvim/lua/chadrc.lua
 
 ## Welcome-App-Run-Once
-stalker-welcome &
+zone-welcome &
 sed -i -e '/## Welcome-App-Run-Once/Q' "$HOME/.config/bspwm/bspwmrd"
