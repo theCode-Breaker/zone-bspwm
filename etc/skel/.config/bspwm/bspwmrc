@@ -105,4 +105,4 @@ sed -i "s/theme =.*$/theme = \"onedark\",/g" $HOME/.config/nvim/lua/chadrc.lua
 
 ## Welcome-App-Run-Once
 zone-welcome &
-sed -i -e '/## Welcome-App-Run-Once/Q' "$HOME/.config/bspwm/bspwmrd"
+sed -i -e '/## Welcome-App-Run-Once/Q' "$HOME/.config/bspwm/bspwmrc"
